@@ -1,0 +1,128 @@
+
+  .list.projects {
+    margin-right: 0;
+  }
+  
+  /* Кнопки*/
+  .btn-list {
+    padding: 6px 22px;
+    font-weight: 500;
+    line-height: 1.62;
+  
+    background: var(--third-bg-color);
+    color: var(title-text-color);
+  
+    @extend %transition;
+  }
+  
+  .btn-list:first-child {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+  .btn-list:focus,
+  .btn-list:hover,
+  .btn-list:active {
+    color: var(--primary-bg-color);
+    background: var(--link-color);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .products.list {
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  /* --------ПРОЕКТИ------- */
+  
+  .section.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  .list.projects {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .project-item {
+    max-width: 370px;
+    flex-basis: calc((100% - 30px * 3) / 3);
+  
+    @extend %transition;
+  }
+  
+  /* ....Overley..... */
+  
+  .team-thumb {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  
+    background-color: rgb(33, 150, 243, 0.9);
+  
+    transform: translateY(100%);
+  
+    transition: transform 250ms;
+  }
+  
+  .overlay-text {
+    display: flex;
+    align-items: center;
+    padding: 63px 24px;
+  
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+  
+  .project-item:hover .overlay {
+    transform: translateY(0);
+  }
+  
+  .link-project {
+    display: block;
+  
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .link-project:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  
+  .item-project {
+    padding: 20px 24px;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+  }
+  
+  .work-name {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+  
+    color: var(--title-text-color);
+  }
+  
+  .job {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #757575;
+  }

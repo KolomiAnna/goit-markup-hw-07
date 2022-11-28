@@ -19,6 +19,7 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		>
+		<link rel="stylesheet" href="./css/main.min.css">
 
 		<link rel="stylesheet" href="./css/styles.css" >
 
@@ -26,38 +27,47 @@
 	</head>
 	<body>
 		<header class="head">
-			<div class="header-container container">
-				<a class="logo-head link" href="">
-					<span class="web">Web</span>Studio
+			<div class="hero container">
+				<a class="logo logo--header link" href="">Web<span class="logo__part">Studio</span>
 				</a>
-				<nav>
-					<ul class="list menu">
-						<li class="item-menu"><a class="link studia" target="_blank" href="./index.html">Студія</a></li>
-						<li class="item-menu"><a class="link current link-portfolio">Портфоліо</a></li>
-						<li class="item-menu"><a class="link link-contact" href="">Контакти</a></li>
-					</ul>
-				</nav>
-				<ul class="contacts list">
-					<li class="contact-item">
-						<a class="contact-header link" href="mailto:info@devstudio.com">
-							<svg class="header-icon" width="16" height="12">
-								<use href="./img/icon/icons.svg#icon-envelope"></use>
-							</svg>
-
-							info@devstudio.com
-						</a>
-					</li>
-					<li class="contact-item">
-						<a class="contact-header link" href="tel:+380961111111">
-							<svg class="header-icon" width="10" height="16">
-								<use href="./img/icon/icons.svg#icon-smartphone"></use>
-							</svg>
-							+38 096 111 11 11
-						</a>
-					</li>
+			  <nav>
+				<ul class="menu list">
+				  <li class="menu__item">
+					<a class="menu__link link" target="_blank" href="./index.html">Студія</a>
+				  </li>
+				  <li class="menu__item">
+					<a
+					  class="menu__link link current"
+					  target="_blank"
+					  href="./portfolio.html"
+					  >Портфоліо</a
+					>
+				  </li>
+				  <li class="menu__item">
+					<a class="menu__link link" href="">Контакти</a>
+				  </li>
 				</ul>
+			  </nav>
+			  <ul class="contacts list">
+				<li class="contacts__item">
+				  <a class="contacts__link link" href="mailto:info@devstudio.com">
+					<svg class="contacts__icon" width="16" height="12">
+					  <use href="./img/icon/icons.svg#icon-envelope"></use>
+					</svg>
+					info@devstudio.com
+				  </a>
+				</li>
+				<li class="contacts__item">
+				  <a class="contacts__link link" href="tel:+380961111111">
+					<svg class="contacts__icon" width="10" height="16">
+					  <use href="./img/icon/icons.svg#icon-smartphone"></use>
+					</svg>
+					+38 096 111 11 11
+				  </a>
+				</li>
+			  </ul>
 			</div>
-		</header>
+		  </header>
 
 		<main>
 			<section class="section portfolio">
@@ -231,8 +241,7 @@
 		<footer class="footer-section">
 			<div class="container footer">
 			  <div class="contain-contacts">
-				<a class="footer-logo link" href="">
-				  <span class="web">Web</span><span class="studio">Studio</span>
+				<a class="logo logo--footer link" href="">Web<span class="logo__part logo__part--white">Studio</span>
 				</a>
 				<address class="address">
 				  <ul class="list list-footer">
@@ -264,58 +273,58 @@
 	  
 			  <div class="contain-socials">
 				<strong class="section-title footer">ПРИЄДНУЙТЕСЬ</strong>
-				<ul class="socials list">
-				  <li class="socials-item">
+				<ul class="networks list">
+				  <li class="networks__item">
 					<a
-					  class="socials-link footer link"
+					  class="networks__link footer link"
 					  href="https://instagram.com"
 					  target="_blank"
 					  rel="noopener noreferrer"
 					  aria-label="Instagram icon"
 					>
-					  <svg class="socials-icon" width="20" height="20">
+					  <svg class="networks__icon" width="20" height="20">
 						<use href="./img/icon/icons.svg#icon-instagram"></use>
 					  </svg>
 					</a>
 				  </li>
 	  
-				  <li class="socials-item">
+				  <li class="networks__item">
 					<a
-					  class="socials-link footer link"
+					  class="networks__link footer link"
 					  href=""
 					  target="_blank"
 					  rel="noopener noreferrer"
 					  aria-label="Twitter"
 					>
-					  <svg class="socials-icon" width="20" height="20">
+					  <svg class="networks__icon" width="20" height="20">
 						<use href="./img/icon/icons.svg#icon-twitter"></use>
 					  </svg>
 					</a>
 				  </li>
 	  
-				  <li class="socials-item">
+				  <li class="networks__item">
 					<a
-					  class="socials-link footer link"
+					  class="networks__link footer link"
 					  href=""
 					  target="_blank"
 					  rel="noopener noreferrer"
 					  aria-label="Facebook"
 					>
-					  <svg class="socials-icon" width="20" height="20">
+					  <svg class="networks__icon" width="20" height="20">
 						<use href="./img/icon/icons.svg#icon-facebook"></use>
 					  </svg>
 					</a>
 				  </li>
 	  
-				  <li class="socials-item">
+				  <li class="networks__item">
 					<a
-					  class="socials-link footer link"
+					  class="networks__link footer link"
 					  href=""
 					  target="_blank"
 					  rel="noopener noreferrer"
 					  aria-label="Linkedin"
 					>
-					  <svg class="socials-icon" width="20" height="20">
+					  <svg class="networks__icon" width="20" height="20">
 						<use href="./img/icon/icons.svg#icon-linkedin"></use>
 					  </svg>
 					</a>
